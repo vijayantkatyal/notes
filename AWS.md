@@ -42,6 +42,17 @@ CREATE USER 'webuser'@'localhost' IDENTIFIED BY 'o&9neg@J5X3uW2tM';
 GRANT ALL PRIVILEGES ON * . * TO 'webuser'@'localhost';
 
 FLUSH PRIVILEGES;
+
+..
+
+note:
+
+login with default (no password)
+sudo mysql -u root (-p)
+
+then create users with native password option
+e.g. 
+ALTER USER 'webuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
 
 > configure buddy and use SFTP for deploy
