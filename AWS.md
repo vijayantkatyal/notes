@@ -52,7 +52,7 @@ sudo mysql -u root (-p)
 
 then create users with native password option
 e.g. 
-ALTER USER 'webuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+ALTER USER 'webuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'o&9neg@J5X3uW2tM';
 ```
 
 > configure buddy and use SFTP for deploy
