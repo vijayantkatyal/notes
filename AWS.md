@@ -16,6 +16,8 @@ sudo chown ubuntu:ubuntu -R html
 chmod 755 -R html
 ```
 
+> chnage instance security groups (allow all http traffic)
+
 > configure mysql and phpmyadmin
 
 ```bash
