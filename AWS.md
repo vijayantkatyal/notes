@@ -91,3 +91,31 @@ composer install
 sudo chmod 777 -R storage/
 ```
 
+
+> edit apache
+
+sudo nano /etc/apache2/sites-available/nano 000-default.conf
+
+```bash
+ <Directory /var/www/html>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Require all granted
+</Directory>
+
+```
+
+> enable redwrite mod
+```bash
+sudo a2enmod rewrite
+```
+
+> restart apache2
+
+```bash
+sudo service apache2 restart
+```
+
+
+
+
