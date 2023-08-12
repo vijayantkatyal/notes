@@ -91,3 +91,24 @@ composer install
 sudo chmod 777 -R storage/
 ```
 
+Update apache conf file
+
+```bash
+sudo nano /etc/apache/sites-available/000-default.conf
+```
+
+add after DocumentRoot
+
+```bash
+<Directory /var/www/html>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Require all granted
+</Directory>
+```
+
+enable rewrite
+
+```
+sudo a2enmod rewrite
+```
